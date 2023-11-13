@@ -44,7 +44,7 @@
       <menus>
         <Menu mnemonicParsing="false" text="Operadores">
           <items>
-            <MenuItem mnemonicParsing="false" text="Novo" />
+            <MenuItem mnemonicParsing="false" onAction="#cadastrarOperador" text="Novo" />
             <MenuItem mnemonicParsing="false" text="Editar" />
             <MenuItem mnemonicParsing="false" text="Excluir" />
             <MenuItem mnemonicParsing="false" text="Listar" />

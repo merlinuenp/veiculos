@@ -13,6 +13,11 @@ public class MenuController {
     }
     
     @FXML
+    private void cadastrarOperador() throws IOException {
+        App.setRoot("novoOperador");
+    }
+    
+    @FXML
     private void sair(){
         Platform.exit();
         System.exit(0);
