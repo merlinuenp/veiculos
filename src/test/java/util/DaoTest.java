@@ -1,6 +1,8 @@
 package util;
 
-import modelo.Operador;
+import modelo.Motorista;
+import modelo.UsoVeiculo;
+import modelo.Veiculo;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeEach;
@@ -38,7 +40,7 @@ public class DaoTest {
 //    @Test
 //    public void testInserirMotorista(){
 //        Motorista motorista = new Motorista();
-//        motorista.setNome("Jarbas");
+//        motorista.setNome("Piolito");
 //        motorista.setEndereco("Rua das Couves, n. 0, Bandeirates, PR");
 //        motorista.setCnh(2345678L);
 //        motorista.setCategoria("ABC");
@@ -86,7 +88,7 @@ public class DaoTest {
 //        Dao<Veiculo> daoV = new Dao(Veiculo.class);
 //        Dao<Motorista> daoM = new Dao(Motorista.class);
 //        Dao<UsoVeiculo> daoU = new Dao(UsoVeiculo.class);
-//        Motorista m = daoM.buscarPorCodigo(1);
+//        Motorista m = daoM.buscarPorCodigo(4);
 //        Veiculo v = daoV.buscarPorCodigo(1);
 //        uso.setVeiculo(v);
 //        uso.setMotorista(m);

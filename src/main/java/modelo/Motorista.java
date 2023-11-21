@@ -78,4 +78,9 @@ public class Motorista extends Pessoa implements Serializable, Persistivel {
         return Objects.equals(this.cnh, other.cnh);
     }
     
+    @Override
+    public String toString(){
+        return this.getNome(); 
+    }
+    
 }

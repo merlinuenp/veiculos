@@ -31,14 +31,19 @@ public class Dao<T extends Persistivel> {
         return objeto;
     }
 
-    public void excluir(T objeto) {
+    public void excluir(T objeto) throws ExclusaoException {
         manager = JpaUtil.getEntityManager();
         EntityTransaction tx = manager.getTransaction();
         tx.begin();
-        T temp = manager.find(classe, objeto.getCodigo());
-        manager.remove(temp);
-        tx.commit();
-        manager.close();
+        try {
+            T temp = manager.find(classe, objeto.getCodigo());
+            manager.remove(temp);
+        } catch (Exception e) {
+            throw new ExclusaoException();
+        } finally {
+            tx.commit();
+            manager.close();
+        }
     }
 
     public void inserir(T objeto) {
