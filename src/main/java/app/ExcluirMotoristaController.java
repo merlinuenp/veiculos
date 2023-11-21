@@ -32,7 +32,7 @@ public class ExcluirMotoristaController {
     private void excluirMotorista() {
         Motorista temp = comboMotoristas.getSelectionModel().getSelectedItem();
         try {
-            dao.excluir(temp);
+            dao.excluir(temp);            
         } catch (ExclusaoException e) {
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setContentText("Motorista não pode ser excluído");
