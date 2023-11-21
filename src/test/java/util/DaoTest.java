@@ -1,5 +1,6 @@
 package util;
 
+import java.time.LocalDate;
 import modelo.Motorista;
 import modelo.UsoVeiculo;
 import modelo.Veiculo;
@@ -88,11 +89,11 @@ public class DaoTest {
 //        Dao<Veiculo> daoV = new Dao(Veiculo.class);
 //        Dao<Motorista> daoM = new Dao(Motorista.class);
 //        Dao<UsoVeiculo> daoU = new Dao(UsoVeiculo.class);
-//        Motorista m = daoM.buscarPorCodigo(4);
+//        Motorista m = daoM.buscarPorCodigo(1);
 //        Veiculo v = daoV.buscarPorCodigo(1);
 //        uso.setVeiculo(v);
 //        uso.setMotorista(m);
-//        uso.setRetirada(new java.util.Date());
+//        uso.setRetirada(LocalDate.now());
 //        daoU.inserir(uso);
 //        
 //    }

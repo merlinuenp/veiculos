@@ -1,6 +1,7 @@
 package modelo;
 
 import java.io.Serializable;
+import java.time.LocalDate;
 import java.util.Date;
 import java.util.Objects;
 import javax.persistence.Column;
@@ -34,16 +35,16 @@ public class UsoVeiculo implements Serializable, Persistivel {
     
     @Column
     @Temporal(TemporalType.DATE)
-    private Date retirada; 
+    private LocalDate retirada; 
     
     @Column
     @Temporal(TemporalType.DATE)
-    private Date devolucao; 
+    private LocalDate devolucao; 
 
     public UsoVeiculo() {
     }
 
-    public UsoVeiculo(Veiculo veiculo, Motorista motorista, Date retirada, Date devolucao) {
+    public UsoVeiculo(Veiculo veiculo, Motorista motorista, LocalDate retirada, LocalDate devolucao) {
         this.veiculo = veiculo;
         this.motorista = motorista;
         this.retirada = retirada;
@@ -74,19 +75,19 @@ public class UsoVeiculo implements Serializable, Persistivel {
         this.motorista = motorista;
     }
 
-    public Date getRetirada() {
+    public LocalDate getRetirada() {
         return retirada;
     }
 
-    public void setRetirada(Date retirada) {
+    public void setRetirada(LocalDate retirada) {
         this.retirada = retirada;
     }
 
-    public Date getDevolucao() {
+    public LocalDate getDevolucao() {
         return devolucao;
     }
 
-    public void setDevolucao(Date devolucao) {
+    public void setDevolucao(LocalDate devolucao) {
         this.devolucao = devolucao;
     }
 
