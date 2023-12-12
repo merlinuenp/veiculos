@@ -5,12 +5,11 @@ import java.io.Serializable;
 import javax.persistence.EntityManager;
 import javax.persistence.TypedQuery;
 import modelo.Operador;
-import util.JpaUtil;
 
 /**
  *
  * @author José 
- * Métodos adicionais específicos de Usuario que não existem na classe genérica Dao.java
+ * Métodos adicionais específicos de Operador que não existem na classe genérica Dao.java
  */
 
 public class DaoOperador implements Serializable{
